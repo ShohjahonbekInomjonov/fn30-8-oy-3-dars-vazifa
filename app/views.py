@@ -8,7 +8,6 @@ from .serializers import RestaurantSerializer, UserSerializer, CustomerSerialize
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
-    permission_classes = [IsAdminUser]
 
 
 class RestaurantViewSet(viewsets.ModelViewSet):
